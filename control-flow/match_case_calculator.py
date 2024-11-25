@@ -7,12 +7,12 @@ operator = input('Choose the operation (+, -, *, /): ')
 # Use a match statement to evaluate the operator
 match operator:
     case "+":
-        print(f'{num1} + {num2} = {num1 + num2}')
+        print(f'The result is {num1 + num2}')
     case "-":
-        print(f'{num1} - {num2} = {num1 - num2}')
+        print(f'The result is {num1 - num2}')
     case "/":
-       print(f'{num1} / {num2} = {num1 / num2}')
+       print(f'The result is {num1 / num2}')
     case "*":
-        print(f'{num1} * {num2} = {num1 * num2}')
+        print(f'The result is {num1 * num2}')
     case _:
         print(f'Invalid operator: {operator}')
