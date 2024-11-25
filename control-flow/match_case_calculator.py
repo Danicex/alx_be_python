@@ -11,7 +11,10 @@ match operator:
     case "-":
         print(f'The result is {num1 - num2}')
     case "/":
-       print(f'The result is {num1 / num2}')
+       if num2 == 0:
+           print("Division by zero is not allowed.")
+       else:
+            print(f'The result is {num1 / num2}')
     case "*":
         print(f'The result is {num1 * num2}')
     case _:
