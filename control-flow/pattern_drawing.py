@@ -2,14 +2,10 @@
 
 def draw_pattern():
     # Prompt user for pattern size
-    size = input("Enter the size of the pattern (positive integer): ").strip()
+    size = input("Enter the size of the pattern: ").strip()
 
     # Validate input
-    while not size.isdigit() or int(size) <= 0:
-        print("Invalid input. Please enter a positive integer.")
-        size = input("Enter the size of the pattern (positive integer): ").strip()
-
-    size = int(size)
+    
 
     # Draw the square pattern
     row = 0
