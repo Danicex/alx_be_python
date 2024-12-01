@@ -20,4 +20,4 @@ match operation:
         else:
             print(f'The result is {num1 / num2}')
     case _:
-        print(f'Invalid operator: {operator}')
+        print(f'Invalid operator: {operation}')
