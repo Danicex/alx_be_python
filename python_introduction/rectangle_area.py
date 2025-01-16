@@ -1,4 +1,9 @@
+#  Define Two Variables
 length = 10
 width = 5
+
+# Calculate the Area (Area= length * width )
 area = length * width
-print(f"The area of the rectangle is: {area}")
+
+# Print the Area
+print(f"The area of the rectangle is:{area}")

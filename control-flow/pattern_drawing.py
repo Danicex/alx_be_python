@@ -1,20 +1,24 @@
-# pattern_drawing.py
+def main():
+    try:
+        # Prompt the user for the size of the pattern
+        size = int(input("Enter the size of the pattern: "))
 
-def draw_pattern():
-    # Prompt user for pattern size
-    size = input("Enter the size of the pattern: ").strip()
+        if size <= 0:
+            print("Please enter a positive integer.")
+            return
 
-    # Validate input
-    
+        # Draw the pattern using nested loops
+        row = 0
+        while row < size:
+            for _ in range(size):
+                print("*", end="")
+            print()  # Move to the next row
+            row += 1
 
-    # Draw the square pattern
-    row = 0
-    while row < size:
-        for _ in range(size):  # Print asterisks for one row
-            print("*", end="")
-        print()  # Move to the next line after printing the row
-        row += 1
+    except ValueError:
+        print("Invalid input. Please enter a positive integer.")
+
 
 # Run the program
 if __name__ == "__main__":
-    draw_pattern()
+    main()
